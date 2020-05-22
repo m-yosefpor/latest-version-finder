@@ -26,9 +26,3 @@ prometheus/prometheus
 prometheus/node_exporter
 coredns/coredns
 rook/rook
-fluent/fluentd
-ansible/ansible
-nginx/nginx
-ceph/ceph
-ovn-org/ovn
-openvswitch/ovs

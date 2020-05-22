@@ -4,3 +4,5 @@ nginx/nginx
 ceph/ceph
 ovn-org/ovn
 openvswitch/ovs
+elastic/elasticsearch
+elastic/kibana

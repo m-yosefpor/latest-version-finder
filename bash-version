@@ -1,6 +1,7 @@
 #!/bin/bash
+echo > latest-versions
 for PROJECT in $(cat $1)
 do
-    echo -n "$PROJECT: "
+    echo -n "$PROJECT: " | tee -a latest-versions
     curl -s https://github.com/$PROJECT/releases/latest | cut -d'/' -f8 | cut -d'"' -f1 | tee -a latest-versions
 done

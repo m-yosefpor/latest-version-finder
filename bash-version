@@ -1,0 +1,6 @@
+#!/bin/bash
+for PROJECT in $(cat $1)
+do
+    echo -n "$PROJECT: "
+    curl -s https://github.com/$PROJECT/releases/latest | cut -d'/' -f8 | cut -d'"' -f1 | tee -a latest-versions
+done

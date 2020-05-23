@@ -26,6 +26,7 @@ https://github.com/torvalds/linux@3.10.0
 https://github.com/haproxy/haproxy@
 https://github.com/mysql/mysql-server@
 https://github.com/rabbitmq/rabbitmq-server@
+https://github.com/acassen/keepalived@1.4.5
 ##IaaS
 #openstack
 #https://github.com/openstack/nova@

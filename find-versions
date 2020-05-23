@@ -1,0 +1,13 @@
+#!/bin/bash
+> latest-versions
+for PROJECT in $(cat project-list | cut -d'@' -f1)
+do
+    if [ -z $(echo $PROJECT | grep '#') ]
+    then
+        echo -n "$PROJECT@" | tee -a latest-versions
+        #echo version | tee -a latest-versions
+        lastversion $PROJECT | tee -a latest-versions
+    else
+        echo "$PROJECT" | tee -a latest-versions
+    fi
+done
